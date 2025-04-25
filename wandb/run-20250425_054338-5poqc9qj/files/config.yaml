@@ -1,0 +1,98 @@
+_wandb:
+    value:
+        cli_version: 0.19.10
+        m: []
+        python_version: 3.11.12
+        t:
+            "1":
+                - 1
+                - 5
+                - 53
+                - 55
+                - 105
+            "2":
+                - 1
+                - 5
+                - 53
+                - 55
+                - 105
+            "3":
+                - 2
+                - 16
+                - 23
+                - 55
+            "4": 3.11.12
+            "5": 0.19.10
+            "8":
+                - 1
+                - 5
+                - 12
+            "12": 0.19.10
+            "13": linux-x86_64
+        visualize:
+            Loss History:
+                panel_config:
+                    fieldSettings:
+                        lineKey: lineKey
+                        lineVal: lineVal
+                        step: step
+                    panelDefId: wandb/lineseries/v0
+                    stringSettings:
+                        title: Train Loss Over Epochs
+                        xname: Epoch
+                    transform:
+                        name: tableWithLeafColNames
+                    userQuery:
+                        queryFields:
+                            - args:
+                                - name: runSets
+                                  value: ${runSets}
+                              fields:
+                                - fields: []
+                                  name: id
+                                - fields: []
+                                  name: name
+                                - fields: []
+                                  name: _defaultColorIndex
+                                - args:
+                                    - name: tableKey
+                                      value: Loss History_table
+                                  fields: []
+                                  name: summaryTable
+                              name: runSets
+                panel_type: Vega2
+            scatter_plot:
+                panel_config:
+                    fieldSettings:
+                        x: Actual
+                        "y": Predicted
+                    panelDefId: wandb/scatter/v0
+                    stringSettings:
+                        title: Predicted vs Actual (Epoch 10)
+                    transform:
+                        name: tableWithLeafColNames
+                    userQuery:
+                        queryFields:
+                            - args:
+                                - name: runSets
+                                  value: ${runSets}
+                              fields:
+                                - fields: []
+                                  name: id
+                                - fields: []
+                                  name: name
+                                - fields: []
+                                  name: _defaultColorIndex
+                                - args:
+                                    - name: tableKey
+                                      value: scatter_plot_table
+                                  fields: []
+                                  name: summaryTable
+                              name: runSets
+                panel_type: Vega2
+batch_size:
+    value: 32
+epochs:
+    value: 10
+lr:
+    value: 0.01

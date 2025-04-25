@@ -1,0 +1,26 @@
+{
+  "os": "Linux-6.1.123+-x86_64-with-glibc2.35",
+  "python": "CPython 3.11.12",
+  "startedAt": "2025-04-25T05:43:38.398292Z",
+  "program": "Wandb_practice.ipynb",
+  "email": "hiro0923fumi@icloud.com",
+  "root": "/content",
+  "host": "51b2bbd51621",
+  "executable": "/usr/bin/python3",
+  "colab": "https://colab.research.google.com/notebook#fileId=1UszZ7LHnO7SoX6hoFQkL5GiLhJeOViiI",
+  "cpu_count": 1,
+  "cpu_count_logical": 2,
+  "disk": {
+    "/": {
+      "total": "115658190848",
+      "used": "39810220032"
+    }
+  },
+  "memory": {
+    "total": "13608370176"
+  },
+  "cpu": {
+    "count": 1,
+    "countLogical": 2
+  }
+}
